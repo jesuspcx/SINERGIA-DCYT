@@ -16,7 +16,7 @@
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter & Outfit & Plus Jakarta Sans -->
+  <!-- Google Fonts: Inter & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
               200: '#bae0fd',
               500: '#0284c7',
               600: '#0369a1',
-              700: '#003B70', // Azul Institucional UCLA
+              700: '#003B70',
               800: '#073259',
               900: '#082845',
             },
@@ -58,9 +58,7 @@
     }
   </script>
   
-  <!-- Al final del <head> de tu index.html -->
-  <link rel="stylesheet" href="styles.css?v=1.1">
-</head>
+  <link rel="stylesheet" href="styles.css?v=1.2">
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-ucla-600 selection:text-white transition-colors duration-300 overflow-x-hidden">
 
@@ -129,14 +127,12 @@
     </div>
   </header>
 
-  <!-- PORTADA FORMAL (ESTILO EXACTO AL MODELO APROBADO) -->
+  <!-- PORTADA FORMAL -->
   <section id="inicio" class="relative py-16 lg:py-24 bg-gradient-to-b from-warm-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-b border-slate-200 dark:border-slate-800 overflow-hidden transition-colors duration-300">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Ficha de Portada -->
       <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-14 border border-slate-200 dark:border-slate-800 shadow-xl relative overflow-hidden transition-colors duration-300">
         
-        <!-- Header con Membrete y Logos -->
         <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-100 dark:border-slate-800">
           <div class="flex items-center gap-4">
             <div class="w-16 h-16 rounded-2xl bg-ucla-700 text-white flex items-center justify-center font-display font-extrabold text-2xl shadow-md shrink-0">
@@ -155,7 +151,6 @@
           </div>
         </div>
 
-        <!-- Título Principal Creativo -->
         <div class="py-12 text-center space-y-4">
           <div class="inline-block px-4 py-1 rounded-full bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 text-xs font-bold tracking-wider uppercase mb-2 border border-sky-200 dark:border-sky-800">
             Portafolio Digital Educativo · Lapso 2026-2
@@ -175,7 +170,6 @@
           </p>
         </div>
 
-        <!-- Meta Datos: Docente y Carrera -->
         <div class="bg-slate-50 dark:bg-slate-800/60 rounded-2xl p-6 border border-slate-200/80 dark:border-slate-700 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
           <div>
             <span class="block text-xs text-slate-400 dark:text-slate-400 font-bold uppercase tracking-wider">Docente Asignada</span>
@@ -196,11 +190,10 @@
     </div>
   </section>
 
-  <!-- SECCIÓN 1: PRESENTACIÓN DEL PORTAFOLIO -->
+  <!-- SECCIÓN 1: PRESENTACIÓN -->
   <section id="seccion1" class="py-20 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Encabezado idéntico al modelo de la profe -->
       <div class="flex items-center gap-3 mb-6">
         <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">
           Sección 1
@@ -210,7 +203,6 @@
         </h2>
       </div>
 
-      <!-- Contenido Textual Calibrado -->
       <div class="bg-slate-50 dark:bg-slate-800/40 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-700 space-y-6 text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
         
         <p>
@@ -234,7 +226,6 @@
           imprescindible de cambio en nuestra comunidad académica del <strong class="text-slate-900 dark:text-white">Decanato de Ciencias y Tecnología (DCYT - UCLA)</strong>.
         </p>
 
-        <!-- Argumentación de Utilidad (4 tarjetas) -->
         <div class="pt-6 border-t border-slate-200 dark:border-slate-700 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
           <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm">
             <span class="font-bold text-ucla-700 dark:text-sky-400 block mb-1">1. Registro del Progreso Cognitivo</span>
@@ -259,11 +250,10 @@
     </div>
   </section>
 
-  <!-- SECCIÓN 2: QUIÉNES SOMOS Y CON QUÉ CONTAMOS -->
+  <!-- SECCIÓN 2: QUIÉNES SOMOS -->
   <section id="seccion2" class="py-20 bg-warm-50/70 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Header con Número Grande y Subtítulo -->
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-2">
           <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">
@@ -278,39 +268,25 @@
         </h2>
       </div>
 
-      <!-- Tarjetas de los 6 Integrantes -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- 1. Jesús Vásquez -->
         <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center text-lg">
-                JV
-              </div>
+              <div class="w-12 h-12 rounded-2xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center text-lg">JV</div>
               <div>
                 <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">JESÚS VÁSQUEZ</h3>
                 <span class="text-xs font-semibold text-ucla-600 dark:text-sky-400 block">C.I. 30.868.085</span>
                 <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Coordinador y Editor Audiovisual</span>
               </div>
             </div>
-
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong>
-                Facilidad para la sintaxis y redacción de textos argumentativos, capacidad de síntesis, edición audiovisual digital y gestión del tiempo.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong>
-                Edición técnica y montaje final del Reel educativo sobre los hábitos, estructuración de reseñas académicas y apertura del video.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong>
-                Responsabilidad, disciplina y honestidad intelectual.
-              </p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Facilidad para la sintaxis y redacción de textos argumentativos, capacidad de síntesis, edición audiovisual digital y gestión del tiempo.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Edición técnica y montaje final del Reel educativo sobre los hábitos, estructuración de reseñas académicas y apertura del video.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Responsabilidad, disciplina y honestidad intelectual.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-ucla-700 dark:text-sky-400 block font-bold">Retos / Desafíos Personales:</strong>
-                Desarrollar mayor soltura en la disertación oral improvisada y optimizar el manejo de la oratoria académica en sustentaciones.
+                <strong class="text-ucla-700 dark:text-sky-400 block font-bold">Retos / Desafíos Personales:</strong> Desarrollar mayor soltura en la disertación oral improvisada y optimizar el manejo de la oratoria académica en sustentaciones.
               </div>
             </div>
           </div>
@@ -320,32 +296,19 @@
         <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white font-display font-bold flex items-center justify-center text-lg">
-                DM
-              </div>
+              <div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white font-display font-bold flex items-center justify-center text-lg">DM</div>
               <div>
                 <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">DAVID MARTÍNEZ</h3>
                 <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 block">C.I. 32.471.679</span>
                 <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Investigador y Curador Teórico</span>
               </div>
             </div>
-
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong>
-                Pensamiento analítico, capacidad de indagación bibliográfica, organización lógica de fuentes y rigor conceptual.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong>
-                Contrastación teórica entre Covey, Charles Duhigg y James Clear, y argumentación sobre la neurociencia del hábito en el Reel.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong>
-                Rigurosidad, perseverancia y espíritu reflexivo.
-              </p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Pensamiento analítico, capacidad de indagación bibliográfica, organización lógica de fuentes y rigor conceptual.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Contrastación teórica entre Covey, Charles Duhigg y James Clear, y argumentación sobre la neurociencia del hábito en el Reel.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Rigurosidad, perseverancia y espíritu reflexivo.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-indigo-700 dark:text-indigo-300 block font-bold">Retos / Desafíos Personales:</strong>
-                Superar el temor escénico durante la sustentación grupal y sintetizar lecturas complejas sin perder profundidad.
+                <strong class="text-indigo-700 dark:text-indigo-300 block font-bold">Retos / Desafíos Personales:</strong> Superar el temor escénico durante la sustentación grupal y sintetizar lecturas complejas sin perder profundidad.
               </div>
             </div>
           </div>
@@ -355,32 +318,19 @@
         <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-display font-bold flex items-center justify-center text-lg">
-                JC
-              </div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-display font-bold flex items-center justify-center text-lg">JC</div>
               <div>
                 <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">JESÚS CÓRDOVA</h3>
                 <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 block">C.I. 33.344.109</span>
                 <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Arquitecto y Desarrollador Web</span>
               </div>
             </div>
-
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong>
-                Desarrollo web responsivo, estructuración en GitHub Pages, experiencia de usuario (UX) y maquetación de portafolios digitales.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong>
-                Despliegue técnico y mantenimiento del portafolio interactivo, asegurando accesibilidad en cualquier dispositivo móvil.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong>
-                Compromiso tecnológico, proactividad y orden metodológico.
-              </p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Desarrollo web responsivo, estructuración en GitHub Pages, experiencia de usuario (UX) y maquetación de portafolios digitales.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Despliegue técnico y mantenimiento del portafolio interactivo, asegurando accesibilidad en cualquier dispositivo móvil.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Compromiso tecnológico, proactividad y orden metodológico.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-emerald-700 dark:text-emerald-300 block font-bold">Retos / Desafíos Personales:</strong>
-                Traducir requerimientos teóricos complejos en interfaces visuales limpias y fortalecer el trabajo sincrónico en equipo.
+                <strong class="text-emerald-700 dark:text-emerald-300 block font-bold">Retos / Desafíos Personales:</strong> Traducir requerimientos teóricos complejos en interfaces visuales limpias y fortalecer el trabajo sincrónico en equipo.
               </div>
             </div>
           </div>
@@ -390,32 +340,19 @@
         <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white font-display font-bold flex items-center justify-center text-lg">
-                JG
-              </div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white font-display font-bold flex items-center justify-center text-lg">JG</div>
               <div>
                 <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">JOSÉ GARCÍA</h3>
                 <span class="text-xs font-semibold text-amber-600 dark:text-amber-400 block">C.I. 30.145.507</span>
                 <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Analista de Contenidos y Logística</span>
               </div>
             </div>
-
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong>
-                Creatividad visual, comunicación verbal asertiva, resolución de problemas prácticos e iniciativa de trabajo.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong>
-                Conceptualización de contenidos para el Reel educativo, análisis de hábitos estudiantiles en el DCYT y apoyo logístico.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong>
-                Adaptabilidad, compañerismo y proactividad.
-              </p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Creatividad visual, comunicación verbal asertiva, resolución de problemas prácticos e iniciativa de trabajo.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Conceptualización de contenidos para el Reel educativo, análisis de hábitos estudiantiles en el DCYT y apoyo logístico.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Adaptabilidad, compañerismo y proactividad.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-amber-700 dark:text-amber-300 block font-bold">Retos / Desafíos Personales:</strong>
-                Mejorar la escucha activa durante los debates grupales y sintetizar ideas densas de manera rápida y estructurada.
+                <strong class="text-amber-700 dark:text-amber-300 block font-bold">Retos / Desafíos Personales:</strong> Mejorar la escucha activa durante los debates grupales y sintetizar ideas densas de manera rápida y estructurada.
               </div>
             </div>
           </div>
@@ -425,32 +362,19 @@
         <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-coral-500 text-white font-display font-bold flex items-center justify-center text-lg">
-                YM
-              </div>
+              <div class="w-12 h-12 rounded-2xl bg-coral-500 text-white font-display font-bold flex items-center justify-center text-lg">YM</div>
               <div>
                 <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">YEXIBEL MARTINEZ</h3>
-                <span class="text-xs font-semibold text-coral-600 dark:text-coral-400 block">C.I.  32.664.718</span>
+                <span class="text-xs font-semibold text-coral-600 dark:text-coral-400 block">C.I. 32.664.718</span>
                 <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Comunicadora y Gestora de Campo</span>
               </div>
             </div>
-
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong>
-                Fluidez verbal, facilidad de relacionamiento interpersonal, empatía, recolección de datos y oratoria.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong>
-                Diseño del formulario en Google Forms, difusión del código QR y abordaje de la muestra de 10 participantes en DCYT.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong>
-                Empatía, comunicación asertiva y respeto.
-              </p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Fluidez verbal, facilidad de relacionamiento interpersonal, empatía, recolección de datos y oratoria.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Diseño del formulario en Google Forms, difusión del código QR y abordaje de la muestra de 10 participantes en DCYT.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Empatía, comunicación asertiva y respeto.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-coral-600 dark:text-coral-400 block font-bold">Retos / Desafíos Personales:</strong>
-                Fortalecer la gestión proactiva del tiempo con anticipación y perfeccionar la precisión técnica en la redacción formal.
+                <strong class="text-coral-600 dark:text-coral-400 block font-bold">Retos / Desafíos Personales:</strong> Fortalecer la gestión proactiva del tiempo con anticipación y perfeccionar la precisión técnica en la redacción formal.
               </div>
             </div>
           </div>
@@ -460,32 +384,19 @@
         <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-cyan-600 text-white font-display font-bold flex items-center justify-center text-lg">
-                IC
-              </div>
+              <div class="w-12 h-12 rounded-2xl bg-cyan-600 text-white font-display font-bold flex items-center justify-center text-lg">IC</div>
               <div>
                 <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">ISAAC COLMENAREZ</h3>
                 <span class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 block">C.I. 32.029.577</span>
                 <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Analista de Sinergia y Trabajo Colaborativo</span>
               </div>
             </div>
-
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong>
-                Capacidad de mediación, pensamiento integrador, facilidad para el trabajo en equipo y estructuración de ideas grupales.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong>
-                Argumentación teórica sobre el hábito de la Sinergia en el Reel educativo y fomento de la cooperación para los proyectos del DCYT.
-              </p>
-              <p>
-                <strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong>
-                Compañerismo, asertividad y compromiso.
-              </p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Capacidad de mediación, pensamiento integrador, facilidad para el trabajo en equipo y estructuración de ideas grupales.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Argumentación teórica sobre el hábito de la Sinergia en el Reel educativo y fomento de la cooperación para los proyectos del DCYT.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Compañerismo, asertividad y compromiso.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-cyan-700 dark:text-cyan-300 block font-bold">Retos / Desafíos Personales:</strong>
-                Perfeccionar la proyección vocal frente a la cámara y lograr mayor concisión al momento de exponer debates teóricos.
+                <strong class="text-cyan-700 dark:text-cyan-300 block font-bold">Retos / Desafíos Personales:</strong> Perfeccionar la proyección vocal frente a la cámara y lograr mayor concisión al momento de exponer debates teóricos.
               </div>
             </div>
           </div>
@@ -496,11 +407,10 @@
     </div>
   </section>
 
-  <!-- SECCIÓN 3: PUNTO DE PARTIDA - NUESTROS HÁBITOS -->
+  <!-- SECCIÓN 3: PUNTO DE PARTIDA -->
   <section id="seccion3" class="py-20 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Encabezado idéntico al modelo de la profe -->
       <div class="mb-10">
         <div class="flex items-center gap-3 mb-2">
           <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">
@@ -518,10 +428,8 @@
         </div>
       </div>
 
-      <!-- Layout Central de 3 Columnas: Reseña | Video Reel | Preguntas del Reel -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Columna 1: Reseña Teórica (El Hábito te Hace o te Deshace) -->
         <div class="lg:col-span-4 bg-slate-50 dark:bg-slate-800/40 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 space-y-4">
           <h3 class="font-display font-black text-2xl text-ucla-900 dark:text-white leading-tight">
             EL HÁBITO <br>
@@ -548,11 +456,9 @@
           </div>
         </div>
 
-        <!-- Columna 2: Video del Reel Educativo (Mockup 9:16) -->
         <div class="lg:col-span-4 flex flex-col items-center">
           <div class="w-full max-w-[280px] aspect-[9/16] bg-slate-900 rounded-3xl border-4 border-slate-800 shadow-2xl relative flex flex-col justify-between overflow-hidden group">
             
-            <!-- Header Reel -->
             <div class="p-3 flex items-center justify-between text-[11px] text-slate-300 z-10">
               <span class="flex items-center gap-1 font-semibold text-rose-400">
                 <i data-lucide="circle" class="w-2 h-2 fill-rose-500 text-rose-500"></i> REEL EDUCATIVO
@@ -560,7 +466,6 @@
               <span>UCLA · DCYT</span>
             </div>
 
-            <!-- Centro con Botón Play -->
             <div class="text-center my-auto z-10 space-y-2">
               <div class="w-16 h-16 rounded-full bg-coral-500 text-white flex items-center justify-center mx-auto shadow-lg shadow-coral-500/40 group-hover:scale-110 transition-transform cursor-pointer">
                 <i data-lucide="play" class="w-7 h-7 fill-white translate-x-0.5"></i>
@@ -569,7 +474,6 @@
               <p class="text-[10px] text-slate-400">Duración: 86 segundos</p>
             </div>
 
-            <!-- Footer Reel -->
             <div class="p-3 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 text-[11px] text-white space-y-1">
               <p class="font-bold">Tema 1: Nuestros Hábitos</p>
               <p class="text-[10px] text-slate-300">Jesús V., Yexibel, David, Jesús C., José e Isaac</p>
@@ -579,7 +483,6 @@
           </div>
         </div>
 
-        <!-- Columna 3: Las 5 Preguntas del Reel Educativo -->
         <div class="lg:col-span-4 bg-slate-50 dark:bg-slate-800/40 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 space-y-4">
           <h4 class="font-display font-bold text-lg text-ucla-900 dark:text-white uppercase tracking-tight flex items-center gap-2">
             <i data-lucide="help-circle" class="w-5 h-5 text-coral-500"></i>
@@ -592,22 +495,18 @@
               <span class="w-2.5 h-2.5 rounded-sm bg-coral-500 mt-1 shrink-0"></span>
               <p><strong class="text-slate-900 dark:text-white">¿Qué es un hábito?</strong> Pauta aprendida y ejecutada en piloto automático para ahorrar energía.</p>
             </div>
-
             <div class="flex items-start gap-3 p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
               <span class="w-2.5 h-2.5 rounded-sm bg-coral-500 mt-1 shrink-0"></span>
               <p><strong class="text-slate-900 dark:text-white">¿Cómo se clasifican?</strong> Físicos, mentales y emocionales; hábitos altamente efectivos vs. defectuosos.</p>
             </div>
-
             <div class="flex items-start gap-3 p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
               <span class="w-2.5 h-2.5 rounded-sm bg-coral-500 mt-1 shrink-0"></span>
               <p><strong class="text-slate-900 dark:text-white">¿En cuánto tiempo se gana o se pierde?</strong> Desmintiendo los 21 días: promedio de 66 días según la ciencia.</p>
             </div>
-
             <div class="flex items-start gap-3 p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
               <span class="w-2.5 h-2.5 rounded-sm bg-coral-500 mt-1 shrink-0"></span>
               <p><strong class="text-slate-900 dark:text-white">¿Por qué son importantes los hábitos escolares?</strong> Vencen la procrastinación y crean un sistema duradero de estudio.</p>
             </div>
-
             <div class="flex items-start gap-3 p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
               <span class="w-2.5 h-2.5 rounded-sm bg-coral-500 mt-1 shrink-0"></span>
               <p><strong class="text-slate-900 dark:text-white">¿Qué hábitos apoyan la vida universitaria en DCYT?</strong> Proactividad diaria, foco profundo y sueño reparador.</p>
@@ -617,7 +516,6 @@
 
       </div>
 
-      <!-- Footer de Fuentes Citadas -->
       <div class="mt-8 p-4 rounded-2xl bg-ucla-900 dark:bg-black text-slate-300 text-xs flex flex-col sm:flex-row items-center justify-between gap-3 border border-slate-800">
         <span class="font-bold text-white uppercase tracking-wider text-[11px] bg-ucla-800 dark:bg-slate-850 px-3 py-1 rounded-lg">FUENTES CONSULTADAS:</span>
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-slate-300 text-xs">
@@ -630,11 +528,10 @@
     </div>
   </section>
 
-  <!-- SECCIÓN 4 / ANEXO: COMUNICACIÓN HUMANA - PARADIGMAS Y PRINCIPIOS -->
+  <!-- SECCIÓN 4 -->
   <section id="seccion4" class="py-20 bg-warm-50/70 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Header -->
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-2">
           <span class="px-3.5 py-1.5 rounded-lg bg-coral-500 text-white font-display font-bold text-sm">
@@ -652,14 +549,12 @@
         </p>
       </div>
 
-      <!-- Banner Superior Inspirador -->
       <div class="mb-10 text-center bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs">
         <p class="font-display font-extrabold text-sm sm:text-base text-ucla-800 dark:text-sky-400 tracking-wider uppercase">
           LOS RESULTADOS LLEGAN CUANDO LOS HÁBITOS SE CONVIERTEN EN PARTE DE TU VIDA
         </p>
       </div>
 
-      <!-- Ruta de Trabajo de la Encuesta + Código QR -->
       <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm mb-12">
         
         <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white uppercase tracking-wider mb-8 text-center sm:text-left">
@@ -668,7 +563,6 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          <!-- Los 5 Pasos en Flujo -->
           <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             
             <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
@@ -713,14 +607,13 @@
 
           </div>
 
-          <!-- Módulo Central del Código QR y Enlace Directo a nuestra UI -->
           <div class="lg:col-span-4 flex flex-col items-center justify-center text-center p-6 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700">
             <div class="w-40 h-40 bg-white p-3 rounded-2xl border border-slate-200 dark:border-slate-600 shadow-sm flex items-center justify-center mb-3">
               <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSf-Y9dxeq7frSyMQ38Ot5pstDE5oId6qLWlgeJlj2c4NSSZuQ%2Fviewform" alt="QR Encuesta Hábitos DCYT" class="w-full h-full rounded-lg">
             </div>
             <span class="text-xs font-bold text-slate-900 dark:text-white block">FORMULARIO CON CÓDIGO QR</span>
             <span class="text-[11px] text-slate-500 dark:text-slate-400 mb-3">Escanea desde tu móvil o ábrelo directamente</span>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-Y9dxeq7frSyMQ38Ot5pstDE5oId6qLWlgeJlj2c4NSSZuQ/viewform" class="w-full py-2.5 px-3 rounded-xl bg-coral-500 hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors flex items-center justify-center gap-1.5 truncate">
+            <a href="encuesta.html" class="w-full py-2.5 px-3 rounded-xl bg-coral-500 hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors flex items-center justify-center gap-1.5 truncate">
               <i data-lucide="clipboard-edit" class="w-3.5 h-3.5 shrink-0"></i>
               <span class="truncate">Responder Encuesta Digital</span>
             </a>
@@ -730,7 +623,6 @@
 
       </div>
 
-      <!-- Bloque de Hallazgos -->
       <div class="space-y-4">
         <h3 class="font-display font-bold text-base sm:text-lg text-ucla-900 dark:text-white uppercase tracking-wide">
           HALLAZGOS: ¿QUÉ PRINCIPIOS Y PARADIGMAS TIENEN LOS ESTUDIANTES DE LA UCLA-DCYT?
@@ -738,7 +630,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          <!-- 1. Principios Predominantes -->
           <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
             <div class="flex items-center gap-2 text-ucla-700 dark:text-sky-400 font-bold text-sm">
               <i data-lucide="scale" class="w-5 h-5 text-ucla-600 dark:text-sky-400"></i>
@@ -750,7 +641,6 @@
             </p>
           </div>
 
-          <!-- 2. Paradigmas Observados -->
           <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
             <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-bold text-sm">
               <i data-lucide="eye" class="w-5 h-5 text-amber-500 dark:text-amber-400"></i>
@@ -762,7 +652,6 @@
             </p>
           </div>
 
-          <!-- 3. Reflexión del Equipo -->
           <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
             <div class="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-bold text-sm">
               <i data-lucide="message-square" class="w-5 h-5 text-rose-500 dark:text-rose-400"></i>
@@ -779,7 +668,7 @@
     </div>
   </section>
 
-  <!-- FOOTER INSTITUCIONAL -->
+  <!-- FOOTER -->
   <footer class="bg-ucla-900 dark:bg-black text-slate-400 py-12 border-t border-ucla-800 dark:border-slate-900 text-xs transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       
@@ -798,6 +687,7 @@
     </div>
   </footer>
 
-  <script src="app.js?v=1.1"></script>
+  <!-- Script principal con control de versión anti-caché -->
+  <script src="app.js?v=1.2"></script>
 </body>
 </html>
