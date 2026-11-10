@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-
   <!-- Etiquetas para forzar la recarga y evitar la caché antigua -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sinergia DCYT | Portafolio Digital - UCLA</title>
@@ -22,7 +21,7 @@
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter & Outfit -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -64,7 +63,7 @@
     }
   </script>
   
-  <link rel="stylesheet" href="styles.css?v=1.2">
+  <link rel="stylesheet" href="styles.css?v=1.5">
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-ucla-600 selection:text-white transition-colors duration-300 overflow-x-hidden">
 
@@ -80,7 +79,7 @@
   <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 transition-colors duration-300 w-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand & Título -->
+      <!-- Brand -->
       <a href="#inicio" class="flex items-center gap-3 group shrink-0">
         <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-ucla-700 to-sky-600 flex items-center justify-center text-white shadow-md shadow-ucla-700/20 group-hover:scale-105 transition-transform">
           <i data-lucide="book-open" class="w-6 h-6"></i>
@@ -92,31 +91,22 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-1">
+      <nav class="hidden xl:flex items-center gap-1">
         <a href="#inicio" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Portada</a>
-        <a href="#seccion1" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Presentación (Sec. 1)</a>
-        <a href="#seccion2" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Equipo (Sec. 2)</a>
-        <a href="#seccion3" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Nuestros Hábitos (Sec. 3)</a>
-        <a href="#seccion4" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Encuesta & QR (Sec. 4)</a>
+        <a href="#seccion1" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Sec. 1</a>
+        <a href="#seccion2" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Equipo</a>
+        <a href="#seccion3" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Hábitos</a>
+        <a href="#seccion4" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-ucla-700 dark:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Punto Intermedio (4)</a>
+        <a href="#anexo" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-ucla-700 dark:hover:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800 transition-colors">Encuesta</a>
       </nav>
 
-      <!-- Actions: Theme Toggle + CTA -->
+      <!-- Actions -->
       <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-        
-        <!-- BOTÓN MODO OSCURO / CLARO -->
-        <button id="theme-toggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 shadow-xs transition-all flex items-center justify-center cursor-pointer" aria-label="Cambiar tema" title="Modo Oscuro / Claro">
-          <i data-lucide="moon" class="w-5 h-5 block dark:hidden text-slate-700"></i>
-          <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-amber-400"></i>
+        <button id="theme-toggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 shadow-xs transition-all cursor-pointer">
+          <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
         </button>
-
-        <!-- CTA Reel -->
-        <a href="#seccion3" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-bold text-white bg-ucla-700 hover:bg-ucla-800 dark:bg-sky-600 dark:hover:bg-sky-700 rounded-xl shadow-sm transition-all">
-          <i data-lucide="play" class="w-3.5 h-3.5 fill-white"></i>
-          <span>Ver Reel</span>
-        </a>
-
-        <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" class="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 lg:hidden cursor-pointer" aria-label="Abrir menú">
+        <button id="mobile-menu-btn" class="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 xl:hidden cursor-pointer">
           <i data-lucide="menu" class="w-5 h-5"></i>
         </button>
       </div>
@@ -124,32 +114,28 @@
     </div>
 
     <!-- Mobile Nav Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-2 pb-6 space-y-1">
+    <div id="mobile-menu" class="hidden xl:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-2 pb-6 space-y-1">
       <a href="#inicio" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-ucla-50 dark:hover:bg-slate-800">Portada</a>
       <a href="#seccion1" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-ucla-50 dark:hover:bg-slate-800">Sección 1: Presentación</a>
       <a href="#seccion2" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-ucla-50 dark:hover:bg-slate-800">Sección 2: Quiénes Somos</a>
       <a href="#seccion3" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-ucla-50 dark:hover:bg-slate-800">Sección 3: Punto de Partida</a>
-      <a href="#seccion4" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-ucla-50 dark:hover:bg-slate-800">Sección 4: Encuesta & QR</a>
+      <a href="#seccion4" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-ucla-700 dark:text-sky-400 hover:bg-ucla-50 dark:hover:bg-slate-800">Sección 4: Punto Intermedio</a>
+      <a href="#anexo" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-ucla-50 dark:hover:bg-slate-800">Anexo: Encuesta & QR</a>
     </div>
   </header>
 
-  <!-- PORTADA FORMAL -->
+  <!-- PORTADA -->
   <section id="inicio" class="relative py-16 lg:py-24 bg-gradient-to-b from-warm-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-b border-slate-200 dark:border-slate-800 overflow-hidden transition-colors duration-300">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      
       <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-14 border border-slate-200 dark:border-slate-800 shadow-xl relative overflow-hidden transition-colors duration-300">
-        
         <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-100 dark:border-slate-800">
           <div class="flex items-center gap-4">
-            <div class="w-16 h-16 rounded-2xl bg-ucla-700 text-white flex items-center justify-center font-display font-extrabold text-2xl shadow-md shrink-0">
-              UCLA
-            </div>
+            <div class="w-16 h-16 rounded-2xl bg-ucla-700 text-white flex items-center justify-center font-display font-extrabold text-2xl shadow-md shrink-0">UCLA</div>
             <div class="text-left">
               <span class="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Decanato de</span>
               <span class="block text-base sm:text-lg font-display font-bold text-ucla-900 dark:text-white leading-tight">Ciencias y Tecnología (DCYT)</span>
             </div>
           </div>
-
           <div class="text-center sm:text-right text-xs text-slate-500 dark:text-slate-400 space-y-0.5 border-t sm:border-t-0 pt-4 sm:pt-0 border-slate-100 dark:border-slate-800">
             <p class="font-bold text-slate-800 dark:text-slate-200">REPÚBLICA BOLIVARIANA DE VENEZUELA</p>
             <p>MINISTERIO DEL PODER POPULAR PARA LA EDUCACIÓN UNIVERSITARIA</p>
@@ -161,18 +147,14 @@
           <div class="inline-block px-4 py-1 rounded-full bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 text-xs font-bold tracking-wider uppercase mb-2 border border-sky-200 dark:border-sky-800">
             Portafolio Digital Educativo · Lapso 2026-2
           </div>
-          
           <h1 class="font-display font-black text-4xl sm:text-6xl text-ucla-900 dark:text-white tracking-tight leading-[1.1] break-words hyphens-auto">
             DE LA INERCIA A LA <br>
-            <span class="bg-gradient-to-r from-coral-500 via-rose-500 to-ucla-700 dark:to-sky-400 bg-clip-text text-transparent break-words">
-              TRANSFORMACIÓN:
-            </span> <br>
+            <span class="bg-gradient-to-r from-coral-500 via-rose-500 to-ucla-700 dark:to-sky-400 bg-clip-text text-transparent break-words">TRANSFORMACIÓN:</span> <br>
             <span class="text-ucla-700 dark:text-sky-400">HÁBITOS QUE COMUNICAN</span>
           </h1>
-
           <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed pt-2">
             Proyecto integrador de aprendizaje continuo para la unidad curricular <br>
-            <strong class="text-slate-900 dark:text-white font-bold">Lenguaje y Comunicaciones</strong> · Parcial 1 (30%)
+            <strong class="text-slate-900 dark:text-white font-bold">Lenguaje y Comunicaciones</strong>
           </p>
         </div>
 
@@ -190,9 +172,7 @@
             <span class="block text-sm font-bold text-slate-800 dark:text-slate-100 mt-1">Ciencias y Tecnología</span>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 
@@ -201,36 +181,16 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center gap-3 mb-6">
-        <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">
-          Sección 1
-        </span>
+        <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">Sección 1</span>
         <h2 class="font-display font-black text-2xl sm:text-3xl text-ucla-900 dark:text-white uppercase tracking-tight">
           PRESENTACIÓN: HÁBITOS QUE COMUNICAN
         </h2>
       </div>
 
       <div class="bg-slate-50 dark:bg-slate-800/40 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-700 space-y-6 text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-        
-        <p>
-          El portafolio digital educativo <strong class="text-slate-900 dark:text-white font-bold">"De la inercia a la transformación: hábitos que comunican"</strong> 
-          funciona como un puente integrador entre la práctica cotidiana universitaria y la evolución continua del aprendizaje. 
-          Este proyecto visibiliza las experiencias pedagógicas desde una perspectiva dinámica, interactiva y participativa, 
-          permitiendo que docentes y estudiantes comprendan el valor de su propia voz y de sus decisiones automatizadas.
-        </p>
-
-        <p>
-          La estructura del contenido se organiza de forma secuencial para acompañar el desarrollo de las competencias 
-          comunicativas paso a paso. A través de diversos módulos analíticos y producciones audiovisuales, se examina el valor 
-          de la comunicación asertiva, mostrando cómo las acciones y hábitos individuales se traducen en transformaciones 
-          colectivas y sinérgicas dentro del entorno universitario.
-        </p>
-
-        <p>
-          Este trabajo evidencia cómo la investigación documental, la tecnología web y el diseño instruccional pueden unirse 
-          para potenciar la educación moderna. El propósito fundamental es inspirar el diálogo crítico, vencer la inercia 
-          académica y ofrecer herramientas conceptuales rigurosas que fortalezcan el rol de la comunicación como motor 
-          imprescindible de cambio en nuestra comunidad académica del <strong class="text-slate-900 dark:text-white">Decanato de Ciencias y Tecnología (DCYT - UCLA)</strong>.
-        </p>
+        <p>El portafolio digital educativo <strong class="text-slate-900 dark:text-white font-bold">"De la inercia a la transformación: hábitos que comunican"</strong> funciona como un puente integrador entre la práctica cotidiana universitaria y la evolución continua del aprendizaje. Este proyecto visibiliza las experiencias pedagógicas desde una perspectiva dinámica, interactiva y participativa, permitiendo que docentes y estudiantes comprendan el valor de su propia voz y de sus decisiones automatizadas.</p>
+        <p>La estructura del contenido se organiza de forma secuencial para acompañar el desarrollo de las competencias comunicativas paso a paso. A través de diversos módulos analíticos y producciones audiovisuales, se examina el valor de la comunicación asertiva, mostrando cómo las acciones y hábitos individuales se traducen en transformaciones colectivas y sinérgicas dentro del entorno universitario.</p>
+        <p>Este trabajo evidencia cómo la investigación documental, la tecnología web y el diseño instruccional pueden unirse para potenciar la educación moderna. El propósito fundamental es inspirar el diálogo crítico, vencer la inercia académica y ofrecer herramientas conceptuales rigurosas que fortalezcan el rol de la comunicación como motor imprescindible de cambio en nuestra comunidad académica del <strong class="text-slate-900 dark:text-white">Decanato de Ciencias y Tecnología (DCYT - UCLA)</strong>.</p>
 
         <div class="pt-6 border-t border-slate-200 dark:border-slate-700 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
           <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm">
@@ -250,34 +210,29 @@
             <p class="text-xs text-slate-600 dark:text-slate-300">Construcción sinérgica basada en los talentos individuales puestos al servicio del equipo.</p>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- SECCIÓN 2: QUIÉNES SOMOS -->
+  <!-- SECCIÓN 2: QUIÉNES SOMOS (Centrado perfecto para 5 integrantes) -->
   <section id="seccion2" class="py-20 bg-warm-50/70 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-2">
-          <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">
-            Sección 2
-          </span>
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-            Seis miradas, una experiencia de aprendizaje
-          </span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">Sección 2</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Cinco miradas, una experiencia de aprendizaje</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-ucla-900 dark:text-white uppercase tracking-tight">
           QUIÉNES SOMOS Y CON QUÉ CONTAMOS
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Grid de 4 columnas en tablet y 6 en PC para permitir el centrado -->
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6">
 
         <!-- 1. Jesús Vásquez -->
-        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+        <div class="md:col-span-2 lg:col-span-2 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
               <div class="w-12 h-12 rounded-2xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center text-lg">JV</div>
@@ -292,14 +247,14 @@
               <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Edición técnica y montaje final del Reel educativo sobre los hábitos, estructuración de reseñas académicas y apertura del video.</p>
               <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Responsabilidad, disciplina y honestidad intelectual.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-ucla-700 dark:text-sky-400 block font-bold">Retos / Desafíos Personales:</strong> Desarrollar mayor soltura en la disertación oral improvisada y optimizar el manejo de la oratoria académica en sustentaciones.
+                <strong class="text-ucla-700 dark:text-sky-400 block font-bold">Retos / Desafíos Personales:</strong> Desarrollar mayor soltura en la disertación oral improvisada y optimizar el manejo de la oratoria académica.
               </div>
             </div>
           </div>
         </div>
 
         <!-- 2. David Martínez -->
-        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+        <div class="md:col-span-2 lg:col-span-2 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
               <div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white font-display font-bold flex items-center justify-center text-lg">DM</div>
@@ -321,7 +276,7 @@
         </div>
 
         <!-- 3. Jesús Córdova -->
-        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+        <div class="md:col-span-2 lg:col-span-2 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
               <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-display font-bold flex items-center justify-center text-lg">JC</div>
@@ -332,40 +287,18 @@
               </div>
             </div>
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Desarrollo web responsivo, estructuración en GitHub Pages, experiencia de usuario (UX) y maquetación de portafolios digitales.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Desarrollo web responsivo, estructuración en GitHub Pages, experiencia de usuario (UX) y maquetación.</p>
               <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Despliegue técnico y mantenimiento del portafolio interactivo, asegurando accesibilidad en cualquier dispositivo móvil.</p>
               <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Compromiso tecnológico, proactividad y orden metodológico.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-emerald-700 dark:text-emerald-300 block font-bold">Retos / Desafíos Personales:</strong> Traducir requerimientos teóricos complejos en interfaces visuales limpias y fortalecer el trabajo sincrónico en equipo.
+                <strong class="text-emerald-700 dark:text-emerald-300 block font-bold">Retos / Desafíos Personales:</strong> Traducir requerimientos teóricos complejos en interfaces visuales limpias y fortalecer el trabajo sincrónico.
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 4. José García -->
-        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
-              <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white font-display font-bold flex items-center justify-center text-lg">JG</div>
-              <div>
-                <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white leading-tight">JOSÉ GARCÍA</h3>
-                <span class="text-xs font-semibold text-amber-600 dark:text-amber-400 block">C.I. 30.145.507</span>
-                <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Rol: Analista de Contenidos y Logística</span>
-              </div>
-            </div>
-            <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Creatividad visual, comunicación verbal asertiva, resolución de problemas prácticos e iniciativa de trabajo.</p>
-              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Conceptualización de contenidos para el Reel educativo, análisis de hábitos estudiantiles en el DCYT y apoyo logístico.</p>
-              <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Adaptabilidad, compañerismo y proactividad.</p>
-              <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-amber-700 dark:text-amber-300 block font-bold">Retos / Desafíos Personales:</strong> Mejorar la escucha activa durante los debates grupales y sintetizar ideas densas de manera rápida y estructurada.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Yexibel Martinez -->
-        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+        <!-- 4. Yexibel Martinez (Centrada en PC) -->
+        <div class="md:col-span-2 lg:col-span-2 lg:col-start-2 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
               <div class="w-12 h-12 rounded-2xl bg-coral-500 text-white font-display font-bold flex items-center justify-center text-lg">YM</div>
@@ -380,14 +313,14 @@
               <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Diseño del formulario en Google Forms, difusión del código QR y abordaje de la muestra de 10 participantes en DCYT.</p>
               <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Empatía, comunicación asertiva y respeto.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-coral-600 dark:text-coral-400 block font-bold">Retos / Desafíos Personales:</strong> Fortalecer la gestión proactiva del tiempo con anticipación y perfeccionar la precisión técnica en la redacción formal.
+                <strong class="text-coral-600 dark:text-coral-400 block font-bold">Retos / Desafíos Personales:</strong> Fortalecer la gestión proactiva del tiempo con anticipación y perfeccionar la precisión técnica en la redacción.
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 6. Isaac Colmenarez -->
-        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+        <!-- 5. Isaac Colmenarez (Centrado en PC y Tablet) -->
+        <div class="md:col-span-2 md:col-start-2 lg:col-span-2 lg:col-start-4 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
               <div class="w-12 h-12 rounded-2xl bg-cyan-600 text-white font-display font-bold flex items-center justify-center text-lg">IC</div>
@@ -399,17 +332,16 @@
             </div>
             <div class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
               <p><strong class="text-slate-900 dark:text-white block font-bold">Habilidades y Destrezas:</strong> Capacidad de mediación, pensamiento integrador, facilidad para el trabajo en equipo y estructuración de ideas grupales.</p>
-              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Argumentación teórica sobre el hábito de la Sinergia en el Reel educativo y fomento de la cooperación para los proyectos del DCYT.</p>
+              <p><strong class="text-slate-900 dark:text-white block font-bold">Evidencia de Talentos:</strong> Argumentación teórica sobre el hábito de la Sinergia en el Reel educativo y fomento de la cooperación para los proyectos.</p>
               <p><strong class="text-slate-900 dark:text-white block font-bold">Valores:</strong> Compañerismo, asertividad y compromiso.</p>
               <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700">
-                <strong class="text-cyan-700 dark:text-cyan-300 block font-bold">Retos / Desafíos Personales:</strong> Perfeccionar la proyección vocal frente a la cámara y lograr mayor concisión al momento de exponer debates teóricos.
+                <strong class="text-cyan-700 dark:text-cyan-300 block font-bold">Retos / Desafíos Personales:</strong> Perfeccionar la proyección vocal frente a la cámara y lograr mayor concisión al momento de exponer debates.
               </div>
             </div>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
@@ -419,12 +351,8 @@
       
       <div class="mb-10">
         <div class="flex items-center gap-3 mb-2">
-          <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">
-            Sección 3
-          </span>
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-            De la inercia a la transformación: hábitos que comunican
-          </span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-ucla-700 dark:bg-sky-600 text-white font-display font-bold text-sm">Sección 3</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">De la inercia a la transformación</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-ucla-900 dark:text-white uppercase tracking-tight">
           3. PUNTO DE PARTIDA
@@ -441,50 +369,36 @@
             EL HÁBITO <br>
             <span class="text-coral-500">TE HACE O TE DESHACE</span>
           </h3>
-
           <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Los actos que repetimos a diario determinan el rumbo de nuestra vida personal y académica. 
-            Tal como plantean autores fundamentales en el estudio de la conducta humana como 
-            <strong class="text-slate-900 dark:text-white">Sean Covey</strong>, <strong class="text-slate-900 dark:text-white">Charles Duhigg</strong> y <strong class="text-slate-900 dark:text-white">James Clear</strong>, 
-            nuestras acciones automáticas, ya sean constructivas o destructivas, moldean de forma decisiva 
-            nuestro carácter y nuestros resultados.
+            Los actos que repetimos a diario determinan el rumbo de nuestra vida personal y académica. Tal como plantean autores fundamentales en el estudio de la conducta humana como <strong class="text-slate-900 dark:text-white">Sean Covey</strong>, <strong class="text-slate-900 dark:text-white">Charles Duhigg</strong> y <strong class="text-slate-900 dark:text-white">James Clear</strong>, nuestras acciones automáticas moldean de forma decisiva nuestro carácter y nuestros resultados.
           </p>
-
           <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            En el contexto universitario del DCYT, comprender el funcionamiento y el poder de estos patrones 
-            resulta indispensable: cultivar rutinas conscientes y positivas nos impulsa con firmeza hacia el éxito, 
-            mientras que descuidarlas puede limitar nuestro verdadero potencial. En definitiva, 
-            <em class="text-slate-800 dark:text-slate-200">la calidad de nuestros hábitos diarios define la trayectoria de nuestro futuro</em>.
+            En el contexto universitario del DCYT, comprender el funcionamiento y el poder de estos patrones resulta indispensable: cultivar rutinas conscientes nos impulsa con firmeza hacia el éxito, mientras que descuidarlas limita nuestro verdadero potencial.
           </p>
-
           <div class="p-3.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-300 italic border-l-4 border-l-ucla-700 dark:border-l-sky-500">
             "Primero formamos nuestros hábitos y luego ellos nos forman a nosotros." — Sean Covey (pp. 3-9)
           </div>
         </div>
 
+        <!-- MOCKUP REEL -->
         <div class="lg:col-span-4 flex flex-col items-center">
           <div class="w-full max-w-[280px] aspect-[9/16] bg-slate-900 rounded-3xl border-4 border-slate-800 shadow-2xl relative flex flex-col justify-between overflow-hidden group">
-            
             <div class="p-3 flex items-center justify-between text-[11px] text-slate-300 z-10">
               <span class="flex items-center gap-1 font-semibold text-rose-400">
                 <i data-lucide="circle" class="w-2 h-2 fill-rose-500 text-rose-500"></i> REEL EDUCATIVO
               </span>
               <span>UCLA · DCYT</span>
             </div>
-
             <div class="text-center my-auto z-10 space-y-2">
               <div class="w-16 h-16 rounded-full bg-coral-500 text-white flex items-center justify-center mx-auto shadow-lg shadow-coral-500/40 group-hover:scale-110 transition-transform cursor-pointer">
                 <i data-lucide="play" class="w-7 h-7 fill-white translate-x-0.5"></i>
               </div>
               <p class="text-xs font-semibold text-white">Ver Video Completo</p>
-              <p class="text-[10px] text-slate-400">Duración: 86 segundos</p>
             </div>
-
             <div class="p-3 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 text-[11px] text-white space-y-1">
               <p class="font-bold">Tema 1: Nuestros Hábitos</p>
-              <p class="text-[10px] text-slate-300">Jesús V., Yexibel, David, Jesús C., José e Isaac</p>
+              <p class="text-[10px] text-slate-300">Jesús V., Yexibel, David, Jesús C., e Isaac</p>
             </div>
-
             <div class="absolute inset-0 bg-gradient-to-b from-ucla-900/60 to-slate-950"></div>
           </div>
         </div>
@@ -492,7 +406,7 @@
         <div class="lg:col-span-4 bg-slate-50 dark:bg-slate-800/40 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 space-y-4">
           <h4 class="font-display font-bold text-lg text-ucla-900 dark:text-white uppercase tracking-tight flex items-center gap-2">
             <i data-lucide="help-circle" class="w-5 h-5 text-coral-500"></i>
-            PREGUNTAS PARA NUESTRO REEL EDUCATIVO
+            PREGUNTAS DEL REEL EDUCATIVO
           </h4>
           <p class="text-xs text-slate-500 dark:text-slate-400">Interrogantes respondidas de manera dinámica en el video:</p>
 
@@ -530,113 +444,191 @@
           <span>• <strong>James Clear:</strong> Hábitos atómicos</span>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- SECCIÓN 4 -->
+  <!-- ========================================== -->
+  <!-- NUEVA SECCIÓN 4: PUNTO INTERMEDIO          -->
+  <!-- ========================================== -->
   <section id="seccion4" class="py-20 bg-warm-50/70 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-2">
-          <span class="px-3.5 py-1.5 rounded-lg bg-coral-500 text-white font-display font-bold text-sm">
-            Sección 4
-          </span>
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-            Avance Semana 2 · Lapso 2026-2
-          </span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-coral-500 text-white font-display font-bold text-sm">Sección 4</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Evaluación de Avance (Sustentación)</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-ucla-900 dark:text-white uppercase tracking-tight">
-          COMUNICACIÓN HUMANA: PARADIGMAS Y PRINCIPIOS
+          DEL PUNTO DE PARTIDA AL PUNTO INTERMEDIO
         </h2>
         <p class="text-sm font-semibold text-slate-600 dark:text-slate-300 mt-2 italic">
-          "Un paradigma es un marco desde el cual interpretamos la realidad. Lo que vemos es lo que tenemos." — Sean Covey
+          "El trabajo en equipo y la tecnología como herramientas para vencer la inercia académica."
         </p>
       </div>
 
-      <div class="mb-10 text-center bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs">
-        <p class="font-display font-extrabold text-sm sm:text-base text-ucla-800 dark:text-sky-400 tracking-wider uppercase">
-          LOS RESULTADOS LLEGAN CUANDO LOS HÁBITOS SE CONVIERTEN EN PARTE DE TU VIDA
-        </p>
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white uppercase tracking-wider mb-8 text-center sm:text-left">
-          RUTA DE TRABAJO DE LA ENCUESTA
-        </h3>
+        <!-- Bloque 1: Reflexión Crítica -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-ucla-100 dark:bg-ucla-900/50 flex items-center justify-center">
+              <i data-lucide="target" class="w-5 h-5 text-ucla-700 dark:text-sky-400"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white uppercase">Reflexión Crítica</h3>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Nuestra experiencia en la construcción de este portafolio nos permitió evaluar cómo nos comunicamos y resolvemos problemas en equipo:</p>
+          <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="alert-circle" class="w-4 h-4 text-rose-500 mt-0.5 shrink-0"></i>
+              <span><strong>Tropiezos:</strong> La coordinación inicial de horarios y la dificultad para sintetizar lecturas teóricas densas en un video corto y dinámico.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="lightbulb" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+              <span><strong>Aprendizajes:</strong> Entender que el trabajo colaborativo no es dividir tareas de forma aislada, sino complementar las debilidades de unos con los talentos de otros.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+              <span><strong>Logros:</strong> Vencer la inercia académica desarrollando una plataforma web completamente funcional, superando la expectativa tradicional de un simple documento estático.</span>
+            </li>
+          </ul>
+        </div>
 
+        <!-- Bloque 2: Competencias en Desarrollo -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-coral-100 dark:bg-coral-900/30 flex items-center justify-center">
+              <i data-lucide="zap" class="w-5 h-5 text-coral-600 dark:text-coral-400"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white uppercase">Competencias en Desarrollo</h3>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Este proyecto exigió salir de nuestra zona de confort y adquirir nuevas habilidades transversales:</p>
+          <div class="space-y-3">
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700">
+              <strong class="text-sm text-slate-900 dark:text-white block mb-1">Competencias Tecnológicas</strong>
+              <p class="text-xs text-slate-600 dark:text-slate-300">Dominio práctico en estructuración web (HTML, CSS, Tailwind) y uso de repositorios en la nube (GitHub Pages) para publicar proyectos en internet.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700">
+              <strong class="text-sm text-slate-900 dark:text-white block mb-1">Competencias Comunicativas</strong>
+              <p class="text-xs text-slate-600 dark:text-slate-300">Mejora en la capacidad de redacción académica, estructuración de guiones audiovisuales y asertividad visual en el diseño de interfaces.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloque 3: Áreas de Vinculación -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
+              <i data-lucide="network" class="w-5 h-5 text-indigo-600 dark:text-indigo-400"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white uppercase">Áreas de Vinculación (Ing. en Informática)</h3>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Descubrimos que la asignatura de <strong>Lenguaje y Comunicaciones</strong> impacta directamente en nuestro perfil como futuros ingenieros del DCYT. En el desarrollo de software, escribir un código limpio es tan importante como saber explicar su lógica a un cliente o documentarlo para un equipo de programación.
+          </p>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Crear la arquitectura de la información de este portafolio y pensar en la "Experiencia de Usuario" (UX) nos demostró que vincular la comunicación humana con la lógica digital es lo que nos convierte en profesionales integrales.
+          </p>
+        </div>
+
+        <!-- Bloque 4: Lectura del Hábito 1 -->
+        <div class="bg-gradient-to-br from-ucla-900 to-ucla-800 dark:from-slate-900 dark:to-slate-800 rounded-3xl p-8 border border-ucla-700 dark:border-slate-700 shadow-sm space-y-5 text-white">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/20">
+              <i data-lucide="arrow-up-circle" class="w-5 h-5 text-sky-300"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl uppercase">Hábito 1: Ser Proactivo</h3>
+          </div>
+          <p class="text-sm text-sky-100/90 leading-relaxed">
+            El motor que impulsó todos los avances de este portafolio radica en la filosofía de Sean Covey sobre la proactividad. 
+          </p>
+          <div class="p-4 rounded-xl bg-black/20 border border-white/10 text-sm text-white space-y-2">
+            <p><strong>De reactivos a proactivos:</strong> En lugar de quejarnos por los errores de código, la falta de tiempo o la dificultad de trabajar a distancia, el equipo decidió enfocarse en su <em>"círculo de influencia"</em>.</p>
+            <p>Asumimos la responsabilidad de buscar soluciones tecnológicas, organizamos nuestros horarios con disciplina y entendimos que la excelencia de este portafolio dependía de nuestras propias actitudes y no de las circunstancias externas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- ANEXO (Antigua Sección 4 de la Encuesta)   -->
+  <!-- ========================================== -->
+  <section id="anexo" class="py-20 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-12">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="px-3.5 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-display font-bold text-sm">Anexo</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Avance de la Semana 2</span>
+        </div>
+        <h2 class="font-display font-black text-2xl sm:text-4xl text-ucla-900 dark:text-white uppercase tracking-tight">
+          RUTA DE LA ENCUESTA: PARADIGMAS Y PRINCIPIOS
+        </h2>
+      </div>
+
+      <div class="bg-slate-50 dark:bg-slate-800/40 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm mb-12">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
+          <!-- 5 Pasos -->
           <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
+            <div class="p-4 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
               <span class="w-8 h-8 rounded-xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center shrink-0">1</span>
               <div>
                 <strong class="text-sm font-bold text-slate-900 dark:text-white block">PLANEACIÓN</strong>
-                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Definición de objetivos, variables conductuales y criterios de evaluación en DCYT.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Definición de objetivos y variables conductuales en DCYT.</p>
               </div>
             </div>
-
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
+            <div class="p-4 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
               <span class="w-8 h-8 rounded-xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center shrink-0">2</span>
               <div>
                 <strong class="text-sm font-bold text-slate-900 dark:text-white block">DISEÑO DE PREGUNTAS</strong>
-                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Formulación de 10 preguntas en escala Likert y opción múltiple en Google Forms.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Formulación en escala Likert mediante Google Forms.</p>
               </div>
             </div>
-
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3 sm:col-span-2">
+            <div class="p-4 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3 sm:col-span-2">
               <span class="w-8 h-8 rounded-xl bg-coral-500 text-white font-display font-bold flex items-center justify-center shrink-0">3</span>
               <div>
                 <strong class="text-sm font-bold text-slate-900 dark:text-white block">APLICACIÓN A MUESTRA DE 10 PARTICIPANTES</strong>
-                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Abordaje presencial y digital a 10 estudiantes activos de las diferentes carreras del decanato.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Abordaje presencial y digital a estudiantes del decanato.</p>
               </div>
             </div>
-
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
+            <div class="p-4 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
               <span class="w-8 h-8 rounded-xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center shrink-0">4</span>
               <div>
                 <strong class="text-sm font-bold text-slate-900 dark:text-white block">ANÁLISIS</strong>
-                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Procesamiento estadístico, contraste de porcentajes y triangulación teórica.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Procesamiento estadístico y triangulación teórica.</p>
               </div>
             </div>
-
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
+            <div class="p-4 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex items-start gap-3">
               <span class="w-8 h-8 rounded-xl bg-ucla-700 text-white font-display font-bold flex items-center justify-center shrink-0">5</span>
               <div>
                 <strong class="text-sm font-bold text-slate-900 dark:text-white block">TRANSFERENCIA AL PORTAFOLIO</strong>
-                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Digitalización de gráficos, hallazgos y conclusiones publicadas en GitHub Pages.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Publicación de hallazgos en GitHub Pages.</p>
               </div>
             </div>
-
           </div>
 
-          <div class="lg:col-span-4 flex flex-col items-center justify-center text-center p-6 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700">
+          <!-- Módulo QR -->
+          <div class="lg:col-span-4 flex flex-col items-center justify-center text-center p-6 bg-white dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700">
             <div class="w-40 h-40 bg-white p-3 rounded-2xl border border-slate-200 dark:border-slate-600 shadow-sm flex items-center justify-center mb-3">
               <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSf-Y9dxeq7frSyMQ38Ot5pstDE5oId6qLWlgeJlj2c4NSSZuQ%2Fviewform" alt="QR Encuesta Hábitos DCYT" class="w-full h-full rounded-lg">
             </div>
             <span class="text-xs font-bold text-slate-900 dark:text-white block">FORMULARIO CON CÓDIGO QR</span>
             <span class="text-[11px] text-slate-500 dark:text-slate-400 mb-3">Escanea desde tu móvil o ábrelo directamente</span>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-Y9dxeq7frSyMQ38Ot5pstDE5oId6qLWlgeJlj2c4NSSZuQ/viewform" class="w-full py-2.5 px-3 rounded-xl bg-coral-500 hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors flex items-center justify-center gap-1.5 truncate">
+            <a href="encuesta.html" class="w-full py-2.5 px-3 rounded-xl bg-coral-500 hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors flex items-center justify-center gap-1.5 truncate">
               <i data-lucide="clipboard-edit" class="w-3.5 h-3.5 shrink-0"></i>
               <span class="truncate">Responder Encuesta Digital</span>
             </a>
           </div>
-
         </div>
-
       </div>
 
       <div class="space-y-4">
         <h3 class="font-display font-bold text-base sm:text-lg text-ucla-900 dark:text-white uppercase tracking-wide">
           HALLAZGOS: ¿QUÉ PRINCIPIOS Y PARADIGMAS TIENEN LOS ESTUDIANTES DE LA UCLA-DCYT?
         </h3>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+          <div class="bg-slate-50 dark:bg-slate-800/40 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
             <div class="flex items-center gap-2 text-ucla-700 dark:text-sky-400 font-bold text-sm">
               <i data-lucide="scale" class="w-5 h-5 text-ucla-600 dark:text-sky-400"></i>
               <span>PRINCIPIOS PREDOMINANTES</span>
@@ -646,54 +638,47 @@
               • <strong class="text-slate-800 dark:text-slate-100">Honestidad intelectual:</strong> Rechazo al plagio y valoración del aprendizaje real en asignaturas lógicas.
             </p>
           </div>
-
-          <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+          <div class="bg-slate-50 dark:bg-slate-800/40 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
             <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-bold text-sm">
               <i data-lucide="eye" class="w-5 h-5 text-amber-500 dark:text-amber-400"></i>
               <span>PARADIGMAS OBSERVADOS</span>
             </div>
             <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
-              • <strong class="text-slate-800 dark:text-slate-100">Paradigma de Crecimiento:</strong> El 70% considera que la dificultad en programación y cálculo se supera con práctica deliberada. <br>
+              • <strong class="text-slate-800 dark:text-slate-100">Paradigma de Crecimiento:</strong> El 70% considera que la dificultad en programación se supera con práctica deliberada. <br>
               • <strong class="text-slate-800 dark:text-slate-100">Paradigma de Urgencia:</strong> Tendencia a priorizar lo inmediato sobre la planificación a largo plazo.
             </p>
           </div>
-
-          <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+          <div class="bg-slate-50 dark:bg-slate-800/40 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
             <div class="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-bold text-sm">
               <i data-lucide="message-square" class="w-5 h-5 text-rose-500 dark:text-rose-400"></i>
               <span>REFLEXIÓN DEL EQUIPO</span>
             </div>
             <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
-              Constatamos que los estudiantes del DCYT poseen metas claras pero demandan sistemas más sólidos de autorregulación. Como postula Sean Covey, alinear los paradigmas con principios universales es el único camino hacia la eficacia duradera.
+              Constatamos que los estudiantes del DCYT poseen metas claras pero demandan sistemas más sólidos de autorregulación. Como postula Sean Covey, alinear los paradigmas con principios es el camino hacia la eficacia.
             </p>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="bg-ucla-900 dark:bg-black text-slate-400 py-12 border-t border-ucla-800 dark:border-slate-900 text-xs transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-      
       <div class="space-y-1">
         <p class="font-bold text-white text-sm font-display">UNIVERSIDAD CENTROCCIDENTAL "LISANDRO ALVARADO" (UCLA)</p>
         <p>Decanato de Ciencias y Tecnología (DCYT) · Asignatura: Lenguaje y Comunicaciones</p>
-        <p class="text-slate-400">Docente: Prof. Naiyelis Peroza · Parcial 1 (30%) · Lapso 2026-2</p>
+        <p class="text-slate-400">Docente: Prof. Naiyelis Peroza · Lapso 2026-2</p>
       </div>
-
       <div class="space-y-1 md:text-right">
         <p class="text-slate-300 font-semibold">Integrantes del Equipo:</p>
-        <p class="text-slate-400">Jesús Vásquez (30.868.085) · David Martínez (32.471.679) · Jesús Córdova (33.344.109) · José García (30.145.507) · Yexibel Martínez (32.664.718) · Isaac Colmenarez (32.029.577)</p>
+        <p class="text-slate-400">Jesús Vásquez (30.868.085) · David Martínez (32.471.679) · Jesús Córdova (33.344.109) · Yexibel Martínez (32.664.718) · Isaac Colmenarez (32.029.577)</p>
         <p class="text-sky-400">Alojado con éxito en GitHub Pages</p>
       </div>
-
     </div>
   </footer>
 
-  <!-- Script principal con control de versión anti-caché -->
-  <script src="app.js?v=1.2"></script>
+  <!-- Script principal -->
+  <script src="app.js?v=1.5"></script>
 </body>
 </html>
